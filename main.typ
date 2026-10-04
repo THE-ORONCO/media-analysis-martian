@@ -7,23 +7,8 @@
 #set table.cell(breakable: false)
 #show figure.where(kind: table): set block(breakable: true)
 
-// --- Filmstills ---------------------------------------------------------
-// Typst kann nicht prüfen, ob eine Datei existiert. Deshalb hier eintragen,
-// welche Screenshots unter img/<name>.png bereits vorliegen (siehe screenshots.md).
-#let stills-ready = ()
-
-#let still(name, zeit, beschreibung, width: 100%, height: 2.6cm) = {
-  if name in stills-ready {
-    image("img/" + name + ".png", width: width)
-  } else {
-    block(
-      width: width, height: height, fill: luma(225), radius: 2pt, inset: 6pt,
-      align(center + horizon, text(size: 6pt, fill: luma(80))[
-        *#name* · #zeit \ #beschreibung
-      ]),
-    )
-  }
-}
+// --- Filmstills (img/<name>.jpg, Liste siehe screenshots.md) -------------
+#let still(name) = image("img/" + name + ".jpg", width: 100%)
 
 #align(center)[
   #text(size: 18pt, weight: "bold")[Medien-Analyse: Der Marsianer] \
@@ -229,43 +214,42 @@ Die acht Sequenzen bilden die Kapitelebene. Jede stellt eine zentrale Spannungsf
 
 Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an und Abgleich mit #cite(<brody2015>, form: "prose"). Die Spalte _Funktion_ beschreibt, was der Beat dramaturgisch leistet – das ist der Teil, den das Spiel übernimmt. Spannung ist eine eigene Einschätzung auf einer Skala von 1 bis 10 (vgl. @fig-kurve).
 
-#let st(name, zeit, desc) = still(name, zeit, desc, height: 2cm)
 
 #figure(
   table(
-    columns: (auto, 1.5fr, 1.5fr, 3.2cm),
+    columns: (3.5cm, 1.5fr, 1.5fr, 3.2cm),
     align: (left, left, left, center),
     table.header([*Beat · Zeit · Seq.*], [*Szene / Ereignis*], [*Funktion (übertragbar)*], [*Bild*]),
 
-    [*Opening Image* \ 00:02–00:03 \ S1], [Crew sammelt Proben, Geplänkel („Mark just discovered dirt“, 00:02:26). Routine einer funktionierenden Gruppe.], [Zeigt die gewohnte Welt _und_ die Gemeinschaft, die gleich verloren geht. Ton: locker, kompetent. Spannung 3.], [#st("s01-opening", "00:02:05–00:03:25", "Crew auf rötlicher Marsoberfläche, Hab und Rover im Hintergrund")],
+    [*Opening Image* \ 00:02–00:03 \ S1], [Crew sammelt Proben, Geplänkel („Mark just discovered dirt“, 00:02:26). Routine einer funktionierenden Gruppe.], [Zeigt die gewohnte Welt _und_ die Gemeinschaft, die gleich verloren geht.\ Ton: locker, kompetent. Spannung 3.], [#still("s01-opening")],
 
     [*Set-Up* \ 00:02–00:05 \ S1], [Rollen werden eingeführt (Lewis führt, Martinez scherzt, Watney ist der Botaniker). Sturmwarnung.], [Etabliert Figuren und Fachgebiete, die später Lösungen liefern (Botanik!).], [–],
 
-    [*Catalyst* \ 00:05–00:08 \ S1], [Antennentrümmer reißen Watney fort; Lewis sucht vergeblich, MAV startet ohne ihn. Pressekonferenz: „Mark Watney … killed“ (00:09:47).], [Unverschuldeter, unumkehrbarer Verlust. Der Held ist isoliert, die Welt hält ihn für tot – das Publikum weiß mehr als die Figuren. Spannung 8.], [#st("p01-sturm", "00:05:30–00:05:45", "Crew im Sandsturm, Watney wird von der Antenne getroffen")],
+    [*Catalyst* \ 00:05–00:08 \ S1], [Antennentrümmer reißen Watney fort; Lewis sucht vergeblich, MAV startet ohne ihn. Pressekonferenz: „Mark Watney … killed“ (00:09:47).], [Unverschuldeter, unumkehrbarer Verlust. Der Held ist isoliert, die Welt hält ihn für tot – das Publikum weiß mehr als die Figuren. Spannung 8.], [#still("p01-sturm")],
 
-    [*Debate* \ 00:10–00:21 \ S1–S2], [Erwachen, Sauerstoffalarm, Selbst-OP, erster Videolog; Rationen zählen („300 sols“, 00:21:05).], [Bestandsaufnahme: Was habe ich, was fehlt? Die Lage wird quantifiziert. Wenig Witz, viel Stille.], [#st("p02-wunde", "00:12:50–00:14:20", "Watney zieht das Antennenstück aus dem Bauch")],
+    [*Debate* \ 00:10–00:21 \ S1–S2], [Erwachen, Sauerstoffalarm, Selbst-OP, erster Videolog; Rationen zählen („300 sols“, 00:21:05).], [Bestandsaufnahme: Was habe ich, was fehlt? Die Lage wird quantifiziert. Wenig Witz, viel Stille.], [#still("p03-vorraete")],
 
-    [*Theme Stated* \ 00:16:57–00:17:03 \ S2], [„It's gonna be four years … And I'm in a Hab designed to last 31 days.“ – Brody @brody2015 sieht hier das Thema. Das eigentliche Leitmotiv wird erst im Epilog ausgesprochen (02:13:15).], [Formuliert die Grundaufgabe als scheinbar unlösbare Rechnung.], [#st("s02-theme", "00:16:50–00:17:05", "Verbundener Watney spricht in die Hab-Logkamera")],
+    [*Theme Stated* \ 00:16:57–00:17:03 \ S2], [„It's gonna be four years … And I'm in a Hab designed to last 31 days.“ – Brody @brody2015 sieht hier das Thema. Das eigentliche Leitmotiv wird erst im Epilog ausgesprochen (02:13:15).], [Formuliert die Grundaufgabe als scheinbar unlösbare Rechnung.], [#still("s02-theme")],
 
-    [*Break into Two* \ 00:21:23–00:21:29 \ S2], [„I'm a botanist … Mars will come to fear my botany powers.“], [Der Held entscheidet sich aktiv – vom Opfer zum Problemlöser. Ton kippt in Komik. Spannung 3.], [#st("s03-botanik", "00:21:20–00:21:30", "Watney an der Logkamera, entschlossen-grinsend")],
+    [*Break into Two* \ 00:21:23–00:21:29 \ S2], [„I'm a botanist … Mars will come to fear my botany powers.“], [Der Held entscheidet sich aktiv – vom Opfer zum Problemlöser. Ton kippt in Komik. Spannung 3.], [#still("s03-botanik")],
 
-    [*B Story* \ 00:56–00:59 \ (Hermes)], [Crew erfährt, dass Watney lebt; Lewis: „I left him behind“ (00:59:21). Keine Trauer, sondern Enttäuschung über sich selbst und die eigene Entscheidung. Bogen von Schuld zu Wiedergutmachung @brody2015.], [Zweiter Strang mit innerer Entwicklung, die dem Haupthelden fehlt. Liefert die emotionale Fallhöhe.], [#st("s06-hermes", "00:58:14–00:59:31", "Hermes-Crew vor dem Bildschirm, Nahaufnahme Lewis")],
+    [*B Story* \ 00:56–00:59 \ (Hermes)], [Crew erfährt, dass Watney lebt; Lewis: „I left him behind“ (00:59:21). Trauer undEnttäuschung über getroffene Entscheidungen. Bogen von Schuld zu Wiedergutmachung @brody2015.], [Zweiter Strang mit innerer Entwicklung, die dem Haupthelden fehlt. Liefert die emotionale Fallhöhe.], [#stack(spacing: 2pt, still("s06-hermes"), still("s06-hermes-closeup"))],
 
-    [*Fun and Games* \ 00:21–00:47 \ S2–S3], [Kartoffelfarm aus Fäkalien und Marserde, Wasser aus Hydrazin (Explosion, „So, yeah, I blew myself up“), Disco, RTG, Fahrt zu Pathfinder. Parallel: NASA entdeckt ihn.], [„Promise of the premise“: Eine Folge kleiner, lösbarer Probleme mit sofortiger Pointe. Fehlschläge sind komisch, nicht tödlich.], [#st("p05-hydrazin", "00:25:11–00:26:36", "Plastikzelt / Explosionsblitz / rußgeschwärztes Gesicht")],
+    [*Fun and Games* \ 00:21–00:47 \ S2–S3], [Kartoffelfarm aus Fäkalien und Marserde, Wasser aus Hydrazin (Explosion, „So, yeah, I blew myself up“), Disco, RTG, Fahrt zu Pathfinder. Parallel: NASA entdeckt ihn.], [„Promise of the premise“: Eine Folge kleiner, lösbarer Probleme mit sofortiger Pointe. Fehlschläge sind komisch, nicht tödlich.], [#still("p04-erde")],
 
-    [*Midpoint* \ 00:47–00:56 \ S3–S4], [Kontakt über Pathfinder und Hex-Karten, dann Textverbindung. Jubel in Houston.], [Falscher Sieg @brody2015: Isolation aufgehoben, die Stränge verbinden sich. Einsatz steigt – jetzt schaut die Welt zu.], [#st("p08-pathfinder", "00:47:40–00:50:30", "Hex-Karten im Kreis um die Pathfinder-Kamera")],
+    [*Midpoint* \ 00:47–00:56 \ S3–S4], [Kontakt über Pathfinder und Hex-Karten, dann Textverbindung. Jubel in Houston.], [Falscher Sieg @brody2015: Isolation aufgehoben, die Stränge verbinden sich. Einsatz steigt – jetzt schaut die Welt zu.], [#still("p08-pathfinder")],
 
-    [*Bad Guys Close In* \ 01:02–01:12 \ S5], [Schleuse bricht weg, Visier gerissen, Ernte erfroren; NASA rechnet: „by Sol 868, he'll be long dead“.], [Die Natur schlägt zurück und vernichtet, was in Fun and Games erarbeitet wurde. Zeitdruck wird konkret. Spannung 9.], [#st("p09-schleuse", "01:02:45–01:04:02", "Abgesprengtes Schleusenmodul, Watney mit gerissenem Visier")],
+    [*Bad Guys Close In* \ 01:02–01:12 \ S5], [Schleuse bricht weg, Visier gerissen, Ernte erfroren; NASA rechnet: „by Sol 868, he'll be long dead“.], [Die Natur schlägt zurück und vernichtet, was in Fun and Games erarbeitet wurde. Zeitdruck wird konkret. Spannung 9.], [#still("p10-ernte-tot")],
 
-    [*All Is Lost* \ 01:16:48–01:18:00 \ S5], [Iris wird ohne die üblichen Prüfungen gestartet („we'll cancel the inspections“, 01:14:38) und zerbricht: „We've lost it, Flight.“], [Die letzte konventionelle Hoffnung scheitert – nicht durch den Helden, sondern im anderen Strang. Spannung 9.], [#st("p11-iris", "01:16:48–01:18:00", "Iris-Start bzw. Schock im Kontrollraum")],
+    [*All Is Lost* \ 01:16:48–01:18:00 \ S5], [Iris wird ohne die üblichen Prüfungen gestartet („we'll cancel the inspections“, 01:14:38) und zerbricht: „We've lost it, Flight.“], [Die letzte konventionelle Hoffnung scheitert – nicht durch den Helden, sondern im anderen Strang. Spannung 9.], [#still("p11-iris")],
 
-    [*Dark Night of the Soul* \ 01:18:51–01:20:15 \ S5], [Watneys Nachricht an Lewis: „If I die, I need you to check in on my parents … I'm not giving up.“], [„Whiff of death“: einzige längere Szene ohne Witz. Der Held benennt die Möglichkeit des Todes. Brody setzt die Dark Night breiter (S. 77–90, bis zum Break into Three); im Film ist sie auf rund 90 Sekunden verdichtet, bevor das CNSA-Angebot die Wende einleitet.], [#st("s09-brief", "01:18:51–01:20:15", "Watney im Hab, ernst, beim Aufzeichnen der Nachricht")],
+    [*Dark Night of the Soul* \ 01:18:51–01:20:15 \ S5], [Watneys Nachricht an Lewis: „If I die, I need you to check in on my parents … I'm not giving up.“], [„Whiff of death“: einzige längere Szene ohne Witz. Der Held benennt die Möglichkeit des Todes. Brody setzt die Dark Night breiter (S. 77–90, bis zum Break into Three); im Film ist sie auf rund 90 Sekunden verdichtet, bevor das CNSA-Angebot die Wende einleitet.], [#still("s09-brief")],
 
-    [*Break into Three* \ 01:20–01:31 \ S6], [CNSA bietet Booster an, Purnell präsentiert das Manöver (Tacker-Demo), Sanders lehnt ab, Henderson schickt es heimlich, Crew stimmt ab: „Let's go get him“ (01:30:30).], [Die Lösung entsteht aus Kooperation aller Stränge (A- und B-Story verschmelzen). Moralische Entscheidung gegen Autorität. Spannung fällt auf 4 – Hoffnung.], [#st("p13-abstimmung", "01:29:00–01:30:37", "Hermes-Crew am Tisch bei der Abstimmung")],
+    [*Break into Three* \ 01:20–01:31 \ S6], [CNSA bietet Booster an, Purnell präsentiert das Manöver (Tacker-Demo), Sanders lehnt ab, Henderson schickt es heimlich, Crew stimmt ab: „Let's go get him“ (01:30:30).], [Die Lösung entsteht aus Kooperation aller Stränge (A- und B-Story verschmelzen). Moralische Entscheidung gegen Autorität. Spannung fällt auf 4 – Hoffnung.], [#still("p13-abstimmung")],
 
-    [*Finale* \ 01:32–02:11 \ S7–S8], [Rover-Umbau, Fahrt, MAV strippen, Start mit 12 g; 68 km zu weit (01:58:05); VAL-Sprengung (02:06:16), Watney als „Iron Man“, Lewis fängt ihn (02:09:12).], [Plan ausführen → unerwartetes Scheitern → Improvisation mit früher etablierten Mitteln (kontrollierte Explosion, Leck als Antrieb). Beide Stränge handeln gleichzeitig. Spannung bis 10.], [#st("p18-ironman", "02:07:53–02:09:12", "Watney im All mit Luftstrahl aus dem Handschuh, Lewis an der Leine")],
+    [*Finale* \ 01:32–02:11 \ S7–S8], [Rover-Umbau, Fahrt, MAV strippen, Start mit 12 g; 68 km zu weit (01:58:05); VAL-Sprengung (02:06:16), Watney als „Iron Man“, Lewis fängt ihn (02:09:12).], [Plan ausführen → unerwartetes Scheitern → Improvisation mit früher etablierten Mitteln (kontrollierte Explosion, Leck als Antrieb). Beide Stränge handeln gleichzeitig. Spannung bis 10.], [#still("p18-ironman")],
 
-    [*Final Image* \ 02:11–02:15 \ S8], [Watney lehrt Astronautenanwärter („You solve one problem … then you solve the next one“), Ares V startet.], [Spiegel des Opening Image: wieder eine Crew auf dem Weg zum Mars; das Wissen wird weitergegeben. Spannung 2.], [#st("p19-lehrer", "02:12:14–02:13:20", "Watney vor Astronautenanwärtern")],
+    [*Final Image* \ 02:11–02:15 \ S8], [Watney lehrt Astronautenanwärter („You solve one problem … then you solve the next one“), Ares V startet.], [Spiegel des Opening Image: wieder eine Crew auf dem Weg zum Mars; das Wissen wird weitergegeben. Spannung 2.], [#still("p19-lehrer")],
   ),
   caption: [Stationen nach Save the Cat! mit Gulino-Sequenz],
 )
@@ -291,6 +275,37 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
   (62.7, 77.7, "10 Bad Guys"), (78.8, 80.3, "12"),
   (80.3, 91.3, "13"), (92.2, 131, "14 Finale"),
 )
+// Handlungsereignisse auf der Kurve: (Minute, Spannung, Beschriftungsposition, Text)
+#let ereignisse = (
+  (2, 3, "o", "Crew bei der Probenentnahme"),
+  (5.6, 8, "o", "Sturm, Watney getroffen"),
+  (9.5, 5, "u", "NASA erklärt Watney für tot"),
+  (13, 8, "o", "Erwachen, Selbst-OP"),
+  (21.5, 3, "u", "„Botany powers“: Entschluss"),
+  (26.4, 7, "o", "Hydrazin-Explosion + Pointe"),
+  (32.5, 4, "o", "Mindy: Watney lebt"),
+  (38, 5, "o", "RTG, Fahrt zu Pathfinder"),
+  (49, 3, "u", "Kontakt per Hex-Karten"),
+  (59, 5, "l", "Crew erfährt es"),
+  (63, 9, "o", "Schleusenbruch"),
+  (67, 7, "r", "Ernte tot"),
+  (72.5, 5, "u", "Purnell findet die Bahn"),
+  (78, 9, "o", "Iris explodiert"),
+  (79.5, 8, "r", "Nachricht an Lewis"),
+  (81.8, 5, "u", "CNSA bietet Booster an"),
+  (86.4, 7, "o", "Sanders lehnt ab"),
+  (90.5, 4, "u", "Crew stimmt für Umkehr"),
+  (95, 3, "u", "„Starman“: Rover-Umbau"),
+  (106.5, 5, "o", "Ankunft am MAV"),
+  (108, 4, "u", "MAV strippen"),
+  (116, 8, "l", "Start mit 12 g"),
+  (118, 9, "o", "68 km zu weit"),
+  (126.3, 9, "o", "VAL-Sprengung"),
+  (129.2, 10, "o", "Lewis fängt Watney"),
+  (133, 2, "u", "Epilog: Lehrer, Ares V"),
+)
+#let buchstabe(i) = str.from-unicode(65 + i)
+
 #let sequenzen = (
   (0, 15.3, "S1"), (15.3, 31.3, "S2"), (31.3, 52.5, "S3"), (52.5, 62.7, "S4"),
   (62.7, 80.3, "S5"), (80.3, 91.3, "S6"), (91.3, 110, "S7"), (110, 135.3, "S8"),
@@ -325,6 +340,15 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
       // Kurve
       let pts = kurve.map(p => (px(p.at(0)), py(p.at(1))))
       place(curve(stroke: 1.2pt + rgb("#1f5f8b"), curve.move(pts.first()), ..pts.slice(1).map(p => curve.line(p))))
+      // Handlungsereignisse
+      for (i, (m, t, pos, _)) in ereignisse.enumerate() {
+        let (x, y) = (px(m), py(t))
+        place(dx: x - 0.06cm, dy: y - 0.06cm, circle(radius: 0.06cm, fill: white, stroke: 0.7pt + rgb("#1f5f8b")))
+        let (ox, oy) = (
+          o: (-0.07cm, -0.36cm), u: (-0.07cm, 0.1cm), l: (-0.3cm, -0.14cm), r: (0.1cm, -0.14cm),
+        ).at(pos)
+        place(dx: x + ox, dy: y + oy, text(size: 6pt, weight: "bold", fill: rgb("#1f5f8b"), buchstabe(i)))
+      }
       // Achsen
       for t in (0, 5, 10) {
         place(dx: L - 0.35cm, dy: py(t) - 0.12cm, text(size: 6pt)[#t])
@@ -342,14 +366,39 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
         band(a, b, y-seq, 0.5cm, if calc.even(i) { luma(205) } else { luma(230) }, n)
       }
     })
+    v(0.2cm)
+    set text(size: 6.5pt)
+    set align(left)
+    let blau = rgb("#1f5f8b")
+    let rot = rgb("#c0392b")
+    let titel(t) = text(weight: "bold", t)
+    let muster(sym, t) = box(width: 0.6cm, height: 0.25cm, align(center + horizon, sym)) + h(0.1cm) + t
+    let legende(n, items) = grid(columns: (1fr,) * n, column-gutter: 0.4cm, row-gutter: 0.22cm, ..items)
+
+    titel[Linien und Symbole]
+    v(0.1cm)
+    legende(3, (
+      muster(line(length: 0.6cm, stroke: 1.2pt + blau))[Spannungskurve],
+      muster(circle(radius: 0.06cm, fill: white, stroke: 0.7pt + blau))[Handlungsereignis (A–Z)],
+      muster(line(length: 0.6cm, stroke: (paint: rot, dash: "dashed", thickness: 0.6pt)))[punktueller Beat (rote Zahl)],
+      muster(rect(width: 0.6cm, height: 0.25cm, fill: rgb("#f3d3cd")))[Beat, der eine Phase umfasst],
+      muster(line(length: 0.6cm, stroke: (paint: luma(190), dash: "dotted")))[Sequenzgrenze],
+      muster(rect(width: 0.6cm, height: 0.25cm, fill: luma(215)))[Sequenz nach Gulino (S1–S8)],
+    ))
+    v(0.2cm)
+    titel[Save-the-Cat!-Beats]
+    v(0.1cm)
+    legende(3, (
+      "Opening Image", "Theme Stated", "Set-Up", "Catalyst", "Debate", "Break into Two",
+      "B Story", "Fun and Games", "Midpoint", "Bad Guys Close In", "All Is Lost",
+      "Dark Night of the Soul", "Break into Three", "Finale", "Final Image",
+    ).enumerate().map(((i, n)) => [#text(weight: "bold", fill: rot)[#(i + 1)] #n]))
+    v(0.2cm)
+    titel[Handlungsereignisse]
+    v(0.1cm)
+    legende(3, ereignisse.enumerate().map(((i, e)) => [#text(weight: "bold", fill: blau, buchstabe(i)) #e.at(3)]))
   },
-  caption: [
-  #set align(left)
-  Spannungskurve der Kinofassung (eigene Einschätzung, 0–10; x-Achse in Minuten) mit allen 15 Save-the-Cat-Beats und den acht Sequenzen nach Gulino.\
-   / #box(stroke: (paint: rgb("#f3d3cd"), dash: "dashed"))[Rot gestrichelt:]: punktuelle Beats\
-   / #box(fill: rgb("#f3d3cd"))[rote Felder:]: Beats, die eine Phase umfassen.\
-   / #box(fill: gray)[Grau gepunktet:]: Sequenzgrenzen.\
-   / #[Beats:]: 1 Opening Image · 2 Theme Stated · 3 Set-Up · 4 Catalyst · 5 Debate · 6 Break into Two · 7 B Story · 8 Fun and Games · 9 Midpoint · 10 Bad Guys Close In · 11 All Is Lost · 12 Dark Night of the Soul · 13 Break into Three · 14 Finale · 15 Final Image.],
+  caption: [Spannungskurve der Kinofassung (eigene Einschätzung, 0–10; x-Achse in Minuten) mit Handlungsereignissen (A–Z), allen 15 Save-the-Cat-Beats und den acht Sequenzen nach Gulino.],
 ) <fig-kurve>
 
 Aus Kurve und Untertitelzeiten ergeben sich vier Tempo-Merkmale, die das Spiel übernehmen sollte:
@@ -372,25 +421,24 @@ Jede Problemsequenz folgt dem Muster _Problem → Bestandsaufnahme der Mittel �
 
 == Problemsequenzen
 
-#let ps(name, zeit, desc) = still(name, zeit, desc, height: 1.8cm)
 
 #figure(
   table(
     columns: (auto, 1.1fr, 1.1fr, 1.2fr, 1fr, 2.6cm),
     table.header([*Nr. · Zeit · Strang*], [*Problem*], [*Mittel / Einschränkung*], [*Lösung im Film*], [*Folge*], [*Bild*]),
-    [P1 \ 00:03–00:08 \ Crew], [Sturm zwingt zum Abbruch; Watney wird getroffen.], [Keine Sicht, MAV kippt, Zeitlimit.], [Keine – Lewis muss abbrechen.], [Watney allein, für tot erklärt.], [#ps("p01-sturm", "00:05:30–00:05:45", "Sturm")],
-    [P2 \ 00:10–00:15 \ Mars], [Anzugleck, Sauerstoff kritisch, Antenne im Bauch.], [Nur Anzug und Hab-Medizinstation; niemand hilft.], [Zurück ins Hab, Selbst-OP, Tacker.], [Erkenntnis: allein, kein Funk.], [#ps("p02-wunde", "00:12:50–00:14:20", "Selbst-OP")],
-    [P3 \ 00:20–00:25 \ Mars], [Nahrung reicht ~300 Sols, Rettung frühestens in vier Jahren.], [Thanksgiving-Kartoffeln, Crew-Fäkalien, Marserde, Hab-Fläche.], [Erde kultivieren, Kartoffeln vierteln und pflanzen.], [Pflanzen brauchen Wasser.], [#ps("p04-erde", "00:21:34–00:24:45", "Erde / Fäkalienbeutel")],
-    [P4 \ 00:25–00:27 \ Mars], [Kein Wasser für die Farm.], [Hydrazin (giftig, explosiv), Iridium-Katalysator, brennbares Material von Martinez.], [Wasserstoff kontrolliert verbrennen – erster Versuch explodiert.], [Wasser gesichert; Watney verletzt, komisch.], [#ps("p05-hydrazin", "00:25:11–00:26:36", "Hydrazin-Zelt")],
-    [P5 \ 00:31–00:34 \ Erde], [Niemand weiß, dass Watney lebt.], [Nur Satellitenbilder.], [Mindy vergleicht Aufnahmen: Rover bewegt, Paneele gereinigt.], [NASA weiß Bescheid, schweigt gegenüber Crew.], [#ps("p06-satellit", "00:31:46–00:32:57", "Mindy an der Satelliten-Station")],
-    [P6 \ 00:36–00:44 \ Mars], [Rover-Akku und Heizung reichen nicht für die Fahrt zu Pathfinder.], [RTG (Plutonium, eigentlich tabu), Rover.], [RTG ausgraben und als Heizung nutzen.], [Reichweite für Expedition.], [#ps("p07-rtg", "00:37:30–00:38:20", "RTG ausgraben")],
-    [P7 \ 00:47–00:53 \ Mars + Erde], [Pathfinder kann nur die Kamera drehen.], [Kamera-Drehwinkel, Karten, Stift; Erde muss mitdenken.], [Hexadezimal-Karten im Kreis → ASCII → später Rover-Text.], [Kommunikation; Crew muss informiert werden.], [#ps("p08-pathfinder", "00:47:40–00:50:30", "Hex-Karten um Pathfinder")],
-    [P8 \ 01:02–01:12 \ Mars], [Schleuse bricht, Visier reißt, Ernte erfriert.], [Klebeband, Plane, Restsauerstoff.], [Visier tapen, Hab abdichten, Kartoffeln zählen.], [Nahrung reicht nur noch bis ~Sol 609.], [#ps("p09-schleuse", "01:02:45–01:04:02", "Schleusenbruch")],
-    [P9 \ 01:15–01:18 \ Erde], [Versorgungssonde muss in Rekordzeit fertig werden.], [Zeit; Sicherheitsprüfungen werden ausgelassen.], [Eilstart der Iris – sie zerbricht.], [Keine Versorgung; Todesnähe.], [#ps("p11-iris", "01:16:48–01:18:00", "Iris-Start / Absturz")],
-    [P10 \ 01:12–01:31 \ Erde + Hermes], [Kein Weg, Watney rechtzeitig zu erreichen; Leitung lehnt Risiko ab.], [Hermes im Rückflug, CNSA-Booster, Purnells Rechnung, Datenkanal zur Hermes.], [Swing-by-Manöver, Plan heimlich in Datei an die Crew, Abstimmung.], [Hermes kehrt um; Watney muss nach Schiaparelli.], [#ps("p12-purnell", "01:23:50–01:24:30", "Purnell mit Tacker")],
-    [P11 \ 01:32–01:46 \ Mars], [3.200 km bis zum MAV mit einem Rover.], [Solarpaneele, Hab-Plane, Anhänger, Energiebudget.], [Rover umbauen, Etappen planen.], [Ankunft am MAV.], [#ps("p14-rover-umbau", "01:32:12–01:33:13", "Umgebauter Rover")],
-    [P12 \ 01:43–01:50 \ Mars + Erde], [MAV zu schwer für den nötigen Orbit.], [Teileliste; Nase, Fenster, Panel 19 entbehrlich.], [MAV strippen, Öffnung mit Hab-Plane bespannen.], [Start möglich – aber knapp.], [#ps("p16-mav-strippen", "01:47:50–01:50:00", "MAV wird gestrippt")],
-    [P13 \ 01:56–02:09 \ Mars + Hermes], [Abstand 68 km, Relativgeschwindigkeit zu hoch.], [Hermes-Schleuse (VAL), Zucker, Flüssigsauerstoff, Fleckenentferner, MMU, Leine, Watneys Handschuh.], [VAL sprengen zum Bremsen, Watney sticht Handschuh an („Iron Man“), Lewis fängt ihn.], [Rettung.], [#ps("p18-ironman", "02:07:53–02:09:12", "Iron-Man-Manöver")],
+    [P1 \ 00:03–00:08 \ Crew], [Sturm zwingt zum Abbruch; Watney wird getroffen.], [Keine Sicht, MAV kippt, Zeitlimit.], [Keine – Lewis muss abbrechen.], [Watney allein, für tot erklärt.], [#still("p01-sturm")],
+    [P2 \ 00:10–00:15 \ Mars], [Anzugleck, Sauerstoff kritisch, Antenne im Bauch.], [Nur Anzug und Hab-Medizinstation; niemand hilft.], [Zurück ins Hab, Selbst-OP, Tacker.], [Erkenntnis: allein, kein Funk.], [#still("p02-wunde")],
+    [P3 \ 00:20–00:25 \ Mars], [Nahrung reicht ~300 Sols, Rettung frühestens in vier Jahren.], [Thanksgiving-Kartoffeln, Crew-Fäkalien, Marserde, Hab-Fläche.], [Erde kultivieren, Kartoffeln vierteln und pflanzen.], [Pflanzen brauchen Wasser.], [#still("p03-vorraete")],
+    [P4 \ 00:25–00:27 \ Mars], [Kein Wasser für die Farm.], [Hydrazin (giftig, explosiv), Iridium-Katalysator, brennbares Material von Martinez.], [Wasserstoff kontrolliert verbrennen – erster Versuch explodiert.], [Wasser gesichert; Watney verletzt, komisch.], [#still("p05-hydrazin")],
+    [P5 \ 00:31–00:34 \ Erde], [Niemand weiß, dass Watney lebt.], [Nur Satellitenbilder.], [Mindy vergleicht Aufnahmen: Rover bewegt, Paneele gereinigt.], [NASA weiß Bescheid, schweigt gegenüber Crew.], [#still("p06-satellite")],
+    [P6 \ 00:36–00:44 \ Mars], [Rover-Akku und Heizung reichen nicht für die Fahrt zu Pathfinder.], [RTG (Plutonium, eigentlich tabu), Rover.], [RTG ausgraben und als Heizung nutzen.], [Reichweite für Expedition.], [#still("p07-rtg")],
+    [P7 \ 00:47–00:53 \ Mars + Erde], [Pathfinder kann nur die Kamera drehen.], [Kamera-Drehwinkel, Karten, Stift; Erde muss mitdenken.], [Hexadezimal-Karten im Kreis → ASCII → später Rover-Text.], [Kommunikation; Crew muss informiert werden.], [#still("p08-pathfinder")],
+    [P8 \ 01:02–01:12 \ Mars], [Schleuse bricht, Visier reißt, Ernte erfriert.], [Klebeband, Plane, Restsauerstoff.], [Visier tapen, Hab abdichten, Kartoffeln zählen.], [Nahrung reicht nur noch bis ~Sol 609.], [#still("p09-schleuse")],
+    [P9 \ 01:15–01:18 \ Erde], [Versorgungssonde muss in Rekordzeit fertig werden.], [Zeit; Sicherheitsprüfungen werden ausgelassen.], [Eilstart der Iris – sie zerbricht.], [Keine Versorgung; Todesnähe.], [#still("p11-iris")],
+    [P10 \ 01:12–01:31 \ Erde + Hermes], [Kein Weg, Watney rechtzeitig zu erreichen; Leitung lehnt Risiko ab.], [Hermes im Rückflug, CNSA-Booster, Purnells Rechnung, Datenkanal zur Hermes.], [Swing-by-Manöver, Plan heimlich in Datei an die Crew, Abstimmung.], [Hermes kehrt um; Watney muss nach Schiaparelli.], [#still("p12-prunell")],
+    [P11 \ 01:32–01:46 \ Mars], [3.200 km bis zum MAV mit einem Rover.], [Solarpaneele, Hab-Plane, Anhänger, Energiebudget.], [Rover umbauen, Etappen planen.], [Ankunft am MAV.], [#still("p14-rover-umbau")],
+    [P12 \ 01:43–01:50 \ Mars + Erde], [MAV zu schwer für den nötigen Orbit.], [Teileliste; Nase, Fenster, Panel 19 entbehrlich.], [MAV strippen, Öffnung mit Hab-Plane bespannen.], [Start möglich – aber knapp.], [#still("p16-mav-strippen")],
+    [P13 \ 01:56–02:09 \ Mars + Hermes], [Abstand 68 km, Relativgeschwindigkeit zu hoch.], [Hermes-Schleuse (VAL), Zucker, Flüssigsauerstoff, Fleckenentferner, MMU, Leine, Watneys Handschuh.], [VAL sprengen zum Bremsen, Watney sticht Handschuh an („Iron Man“), Lewis fängt ihn.], [Rettung.], [#still("p17-abfangen")],
   ),
   caption: [Problemsequenzen der Kinofassung],
 )
