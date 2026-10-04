@@ -1,3 +1,5 @@
+#import "lib.typ": *
+
 #set page(paper: "a4", margin: 2.2cm, numbering: "1")
 #set heading(numbering: "1.1")
 #set par(justify: true)
@@ -8,6 +10,24 @@
 
 // --- Filmstills (img/<name>.jpg, Liste siehe screenshots.md) -------------
 #let still(name) = image("img/" + name + ".jpg", width: 100%)
+
+#let me = "Théo Florin Roncoletta"
+#let em = "Roncoletta, Théo Florin"
+#let matno = "379030"
+#show: front_page.with(
+  author:             me,
+  kind: [Filmanalyse],
+  program: [Game-Produktion und Management],
+  matriculation_num: matno,
+  examiner: [Prof. Michael Hebel],
+  module: [Game Direction & Storytelling],
+  semester: [WiSe 2026/2027],
+  title: [Filmanalyse zum film #emph[Der Marsianer]],
+  date_received: [04.09.2026],
+  date_submitted: datetime.today().display("[day].[month].[year]"),
+
+)
+
 
 #align(center)[
   #text(size: 18pt, weight: "bold")[Medien-Analyse: Der Marsianer] \
