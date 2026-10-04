@@ -1,4 +1,3 @@
-#set text(lang: "de")
 #set page(paper: "a4", margin: 2.2cm, numbering: "1")
 #set heading(numbering: "1.1")
 #set par(justify: true)
@@ -258,11 +257,11 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
 
 #let kurve = (
   (2, 3), (5.6, 8), (9.5, 5), (13, 8), (16.5, 4), (21.5, 3),
-  (26.4, 7), (26.6, 3), (29, 4), (32.5, 4), (38, 5), (44, 4),
-  (49, 3), (55, 3), (59, 5), (63, 9), (67, 7), (68, 4),
+  (26.4, 7), (26.6, 3), (29, 3.2), (32.5, 4), (38, 5), (44, 4), (46, 3),
+  (49, 4), (55, 3), (59, 5), (63, 9), (67, 7), (68, 4),
   (72.5, 5), (78, 9), (79.5, 8), (81.8, 5), (84, 5), (86.4, 7),
-  (90.5, 4), (95, 3), (99, 3), (106.5, 5), (108, 4), (116, 8),
-  (118, 9), (122, 8), (126.3, 9), (129.2, 10), (130, 3), (133, 2), (135, 2),
+  (90.5, 4), (95, 3), (99, 3), (106.5, 5), (108, 5.1), (116, 8),
+  (118, 9), (126.3, 9.1), (129.2, 10), (130, 3), (133, 2), (135, 2),
 )
 // Save the Cat!: punktuelle Beats (Minute, Nr., Name) und Phasen (von, bis, Beschriftung)
 #let stc-punkte = (
@@ -285,7 +284,7 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
   (26.4, 7, "o", "Hydrazin-Explosion + Pointe"),
   (32.5, 4, "o", "Mindy: Watney lebt"),
   (38, 5, "o", "RTG, Fahrt zu Pathfinder"),
-  (49, 3, "u", "Kontakt per Hex-Karten"),
+  (49, 4, "o", "Kontakt per Hex-Karten"),
   (59, 5, "l", "Crew erfährt es"),
   (63, 9, "o", "Schleusenbruch"),
   (67, 7, "r", "Ernte tot"),
@@ -297,10 +296,10 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
   (90.5, 4, "u", "Crew stimmt für Umkehr"),
   (95, 3, "u", "„Starman“: Rover-Umbau"),
   (106.5, 5, "o", "Ankunft am MAV"),
-  (108, 4, "u", "MAV strippen"),
+  (108, 5.1, "o", "MAV strippen"),
   (116, 8, "l", "Start mit 12 g"),
   (118, 9, "o", "68 km zu weit"),
-  (126.3, 9, "o", "VAL-Sprengung"),
+  (126.3, 9.1, "o", "VAL-Sprengung"),
   (129.2, 10, "o", "Lewis fängt Watney"),
   (133, 2, "u", "Epilog: Lehrer, Ares V"),
 )
