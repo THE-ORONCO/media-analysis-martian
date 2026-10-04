@@ -277,7 +277,7 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
 )
 // Handlungsereignisse auf der Kurve: (Minute, Spannung, Beschriftungsposition, Text)
 #let ereignisse = (
-  (2, 3, "o", "Crew bei der Probenentnahme"),
+  (2, 3, "o", "Crew bei Probenentnahme"),
   (5.6, 8, "o", "Sturm, Watney getroffen"),
   (9.5, 5, "u", "NASA erklärt Watney für tot"),
   (13, 8, "o", "Erwachen, Selbst-OP"),
@@ -388,7 +388,7 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
     v(0.2cm)
     titel[Save-the-Cat!-Beats]
     v(0.1cm)
-    legende(3, (
+    legende(5, (
       "Opening Image", "Theme Stated", "Set-Up", "Catalyst", "Debate", "Break into Two",
       "B Story", "Fun and Games", "Midpoint", "Bad Guys Close In", "All Is Lost",
       "Dark Night of the Soul", "Break into Three", "Finale", "Final Image",
@@ -396,7 +396,7 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
     v(0.2cm)
     titel[Handlungsereignisse]
     v(0.1cm)
-    legende(3, ereignisse.enumerate().map(((i, e)) => [#text(weight: "bold", fill: blau, buchstabe(i)) #e.at(3)]))
+    legende(5, ereignisse.enumerate().map(((i, e)) => [#text(weight: "bold", fill: blau, buchstabe(i)) #e.at(3)]))
   },
   caption: [Spannungskurve der Kinofassung (eigene Einschätzung, 0–10; x-Achse in Minuten) mit Handlungsereignissen (A–Z), allen 15 Save-the-Cat-Beats und den acht Sequenzen nach Gulino.],
 ) <fig-kurve>
