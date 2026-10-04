@@ -423,7 +423,7 @@ Jede Problemsequenz folgt dem Muster _Problem → Bestandsaufnahme der Mittel �
 #page(flipped: true)[
 #figure(
   table(
-    columns: (auto, 1.1fr, 1.1fr, 1.2fr, 1fr, 6cm),
+    columns: (auto, .7fr, .7fr, .7fr, .6fr, 7.2cm),
     table.header([*Nr. · Zeit · Strang*], [*Problem*], [*Mittel / Einschränkung*], [*Lösung im Film*], [*Folge*], [*Bild*]),
     [P1 \ 00:03–00:08 \ Crew], [Sturm zwingt zum Abbruch; Watney wird getroffen.], [Keine Sicht, MAV kippt, Zeitlimit.], [Keine – Lewis muss abbrechen.], [Watney allein, für tot erklärt.], [#still("p01-sturm")],
     [P2 \ 00:10–00:15 \ Mars], [Anzugleck, Sauerstoff kritisch, Antenne im Bauch.], [Nur Anzug und Hab-Medizinstation; niemand hilft.], [Zurück ins Hab, Selbst-OP, Tacker.], [Erkenntnis: allein, kein Funk.], [#still("p02-wunde")],
@@ -431,12 +431,12 @@ Jede Problemsequenz folgt dem Muster _Problem → Bestandsaufnahme der Mittel �
     [P4 \ 00:25–00:27 \ Mars], [Kein Wasser für die Farm.], [Hydrazin (giftig, explosiv), Iridium-Katalysator, brennbares Material von Martinez.], [Wasserstoff kontrolliert verbrennen – erster Versuch explodiert.], [Wasser gesichert; Watney verletzt, komisch.], [#still("p05-hydrazin")],
     [P5 \ 00:31–00:34 \ Erde], [Niemand weiß, dass Watney lebt.], [Nur Satellitenbilder.], [Mindy vergleicht Aufnahmen: Rover bewegt, Paneele gereinigt.], [NASA weiß Bescheid, schweigt gegenüber Crew.], [#still("p06-satellite")],
     [P6 \ 00:36–00:44 \ Mars], [Rover-Akku und Heizung reichen nicht für die Fahrt zu Pathfinder.], [RTG (Plutonium, eigentlich tabu), Rover.], [RTG ausgraben und als Heizung nutzen.], [Reichweite für Expedition.], [#still("p07-rtg")],
-    [P7 \ 00:47–00:53 \ Mars + Erde], [Pathfinder kann nur die Kamera drehen.], [Kamera-Drehwinkel, Karten, Stift; Erde muss mitdenken.], [Hexadezimal-Karten im Kreis → ASCII → später Rover-Text.], [Kommunikation; Crew muss informiert werden.], [#still("p08-pathfinder")],
+    [P7 \ 00:47–00:53 \ Mars + Erde], [Pathfinder kann nur die Kamera drehen.], [Kamera-Drehwinkel, Karten, Stift; Erde muss mitdenken.], [Hexadezimal-Karten im Kreis\ #sym.arrow.r ASCII\ #sym.arrow.r später Rover-Text.], [Kommunikation; Crew muss informiert werden.], [#still("p08-pathfinder")],
     [P8 \ 01:02–01:12 \ Mars], [Schleuse bricht, Visier reißt, Ernte erfriert.], [Klebeband, Plane, Restsauerstoff.], [Visier tapen, Hab abdichten, Kartoffeln zählen.], [Nahrung reicht nur noch bis ~Sol 609.], [#still("p09-schleuse")],
-    [P9 \ 01:15–01:18 \ Erde], [Versorgungssonde muss in Rekordzeit fertig werden.], [Zeit; Sicherheitsprüfungen werden ausgelassen.], [Eilstart der Iris – sie zerbricht.], [Keine Versorgung; Todesnähe.], [#still("p11-iris")],
-    [P10 \ 01:12–01:31 \ Erde + Hermes], [Kein Weg, Watney rechtzeitig zu erreichen; Leitung lehnt Risiko ab.], [Hermes im Rückflug, CNSA-Booster, Purnells Rechnung, Datenkanal zur Hermes.], [Swing-by-Manöver, Plan heimlich in Datei an die Crew, Abstimmung.], [Hermes kehrt um; Watney muss nach Schiaparelli.], [#still("p12-prunell")],
+    [P9 \ 01:15–01:18 \ Erde], [Versorgungssonde muss in Rekordzeit fertig werden.], [Zeit; Sicherheitsprüfungen werden ausgelassen.], [Eilstart der Iris\ #sym.arrow.r sie zerbricht.], [Keine Versorgung; Todesnähe.], [#still("p11-iris")],
+    [P10 \ 01:12–01:31 \ Erde + Hermes], [Kein Weg existiert, Watney rechtzeitig zu erreichen. Leitung lehnt Risiko ab.], [Hermes im Rückflug, CNSA-Booster, Purnells Rechnung, Datenkanal zur Hermes.], [Swing-by-Manöver, Plan heimlich in Datei an die Crew, Abstimmung.], [Hermes kehrt um; Watney muss nach Schiaparelli.], [#still("p12-prunell")],
     [P11 \ 01:32–01:46 \ Mars], [3.200 km bis zum MAV mit einem Rover.], [Solarpaneele, Hab-Plane, Anhänger, Energiebudget.], [Rover umbauen, Etappen planen.], [Ankunft am MAV.], [#still("p14-rover-umbau")],
-    [P12 \ 01:43–01:50 \ Mars + Erde], [MAV zu schwer für den nötigen Orbit.], [Teileliste; Nase, Fenster, Panel 19 entbehrlich.], [MAV strippen, Öffnung mit Hab-Plane bespannen.], [Start möglich – aber knapp.], [#still("p16-mav-strippen")],
+    [P12 \ 01:43–01:50 \ Mars + Erde], [MAV zu schwer für den nötigen Orbit.], [Teileliste; Nase, Fenster, Panel 19 entbehrlich.], [MAV strippen, Öffnung mit Hab-Plane bespannen.], [Start möglich, nur  aber knapp.], [#still("p16-mav-strippen")],
     [P13 \ 01:56–02:09 \ Mars + Hermes], [Abstand 68 km, Relativgeschwindigkeit zu hoch.], [Hermes-Schleuse (VAL), Zucker, Flüssigsauerstoff, Fleckenentferner, MMU, Leine, Watneys Handschuh.], [VAL sprengen zum Bremsen, Watney sticht Handschuh an („Iron Man“), Lewis fängt ihn.], [Rettung.], [#still("p17-abfangen")],
   ),
   caption: [Problemsequenzen der Kinofassung],
@@ -449,7 +449,7 @@ Die folgende Tabelle abstrahiert jedes Problem auf seine Funktion. Die Spalte _B
 
 #figure(
   table(
-    columns: (auto, 1.2fr, 1fr, 1.6fr),
+    columns: (3.2cm, 1fr, 1.2fr, 1.6fr),
     table.header([*Nr. · Beat*], [*Abstrakte Funktion*], [*Rätseltyp*], [*Beispiel (Mars / settingfrei)*]),
     [P1 · Catalyst], [Unvermeidbarer Verlust, der den Helden isoliert.], [Kein Rätsel: interaktiver Prolog, der scheitern _muss_ (Cutscene am Ende).], [Mars: Crew-Evakuierung, Spieler wird getroffen. \ Neutral: Spieler erledigt Routineaufgabe, ein Unglück trennt ihn von der Gruppe.],
     [P2 · Debate], [Akute Notlage mit minimalen Mitteln; Tutorial unter Druck.], [Inventar-Kombination in einem einzigen Raum, weiches Zeitlimit.], [Mars: Wunde versorgen mit Medizinstation. \ Neutral: Verletzung/Defekt mit drei bis vier Gegenständen beheben, um den Grundraum nutzen zu können.],
@@ -478,4 +478,5 @@ Die folgende Tabelle abstrahiert jedes Problem auf seine Funktion. Die Spalte _B
 + *Humor dosieren.* Pointe nach jedem Erfolg und kleinen Fehlschlag, aber nach großen Katastrophen bewusst Pause (wachsende Humor-Latenz).
 + *Finale als Prüfung des Gelernten.* Die letzten Rätsel kombinieren Lösungen früherer Kapitel neu. Erst die Kooperation mit dem zweiten Strang löst sie – das Thema „Kooperation“ wird so spielmechanisch erfahrbar. _Offene Designentscheidung:_ ob der zweite Strang spielbar ist (Charakterwechsel) oder nur über Zwischenschnitte erzählt wird.
 
+#pagebreak()
 #bibliography("literatur.bib", style: "cite/apa-GPM.csl", title: "Quellen")
