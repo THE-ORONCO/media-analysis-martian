@@ -216,7 +216,7 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
 
 #figure(
   table(
-    columns: (3.5cm, 1.5fr, 1.5fr, 3.2cm),
+    columns: (3.5cm, 1.5fr, 1.5fr, 5.5cm),
     align: (left, left, left, center),
     table.header([*Beat · Zeit · Seq.*], [*Szene / Ereignis*], [*Funktion (übertragbar)*], [*Bild*]),
 
@@ -409,7 +409,6 @@ Aus Kurve und Untertitelzeiten ergeben sich vier Tempo-Merkmale, die das Spiel �
 
 *Stimmung:* Lebensgefahr, erzählt im Ton eines Arbeitsprotokolls mit Galgenhumor – „überraschend launig“ und „mit einem … ungewöhnlichen Augenzwinkern“ @baumgardt2015, „Spannung, unverkrampfte[] Komik und … jede Menge Discosongs“ @heidmann2015. Disco funktioniert dabei als Running Gag (Watney hasst Lewis' Musik, hat aber nichts anderes) und als ironischer Kommentar („Hot Stuff“, „Waterloo“, „I Will Survive“).
 
-#pagebreak()
 
 
 = Problemsequenzanalyse <chap-problem>
@@ -421,9 +420,10 @@ Jede Problemsequenz folgt dem Muster _Problem → Bestandsaufnahme der Mittel �
 == Problemsequenzen
 
 
+#page(flipped: true)[
 #figure(
   table(
-    columns: (auto, 1.1fr, 1.1fr, 1.2fr, 1fr, 2.6cm),
+    columns: (auto, 1.1fr, 1.1fr, 1.2fr, 1fr, 6cm),
     table.header([*Nr. · Zeit · Strang*], [*Problem*], [*Mittel / Einschränkung*], [*Lösung im Film*], [*Folge*], [*Bild*]),
     [P1 \ 00:03–00:08 \ Crew], [Sturm zwingt zum Abbruch; Watney wird getroffen.], [Keine Sicht, MAV kippt, Zeitlimit.], [Keine – Lewis muss abbrechen.], [Watney allein, für tot erklärt.], [#still("p01-sturm")],
     [P2 \ 00:10–00:15 \ Mars], [Anzugleck, Sauerstoff kritisch, Antenne im Bauch.], [Nur Anzug und Hab-Medizinstation; niemand hilft.], [Zurück ins Hab, Selbst-OP, Tacker.], [Erkenntnis: allein, kein Funk.], [#still("p02-wunde")],
@@ -441,6 +441,7 @@ Jede Problemsequenz folgt dem Muster _Problem → Bestandsaufnahme der Mittel �
   ),
   caption: [Problemsequenzen der Kinofassung],
 )
+]
 
 == Übertragung auf Rätsel (setting-neutral)
 
