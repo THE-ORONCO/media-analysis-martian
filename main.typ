@@ -40,7 +40,7 @@
 
 / Tagline: „Bring Him Home“ sowie „Help is only 140 million miles away“ (Kinoplakate) @impawards2015.
 
-/ Thema: _Problemlösen als Haltung_ – „You solve one problem … then you solve the next one“ (Watney im Epilog, 02:13:15). Ergänzend: _Kooperation statt Einzelheldentum_ – eine ganze Welt (NASA, JPL, chinesische Raumfahrtbehörde, Hermes-Crew) setzt Ressourcen für einen einzelnen Menschen ein. Die Vorlage formuliert das explizit: „every human being has a basic instinct to help each other out“ @weir2014. Nebenthemen: Verantwortung und Schuld (Commander Lewis), Risiko gegen Menschenleben (Teddy Sanders vs. Mitch Henderson).
+/ Thema: _Problemlösen als Haltung_ – „You solve one problem … then you solve the next one“ (Watney im Epilog, 02:13:15). Ergänzend: _Kooperation statt Einzelheldentum_ – eine ganze Welt (NASA, JPL, chinesische Raumfahrtbehörde, Hermes-Crew) setzt Ressourcen für einen einzelnen Menschen ein. Die Vorlage formuliert das explizit: „every human being has a basic instinct to help each other out“ @weir2014. Diese Lesart ist allerdings umstritten: #cite(<mosswellington2020>, form: "prose", supplement: [S. 4]) zeigt, dass „a number of subtle narrative devices in The Martian attribute key breakthroughs to the work of the lone genius rather than effective collaboration“; der Film sei bestenfalls „an attempt to talk through these problems“ (S. 9). Nebenthemen: Verantwortung und Schuld (Commander Lewis), Risiko gegen Menschenleben (Teddy Sanders vs. Mitch Henderson).
 
 == Plot (grob)
 
@@ -96,7 +96,7 @@ Auf der Mikroebene folgt fast jede Szene demselben Muster, das Shetty kritisch b
 
 / #[*Passt:*]: Gewohnte Welt (Ares-III-Routine), Ruf (Sturm), Überschreiten der Schwelle (Entscheidung zum Anbau, „Mars will come to fear my botany powers“, 00:21:29), Bewährungsproben (Wasser, Pathfinder), Entscheidende Prüfung (Schleusenbruch und Iris-Explosion), Rückweg (wörtlich: die Fahrt nach Schiaparelli), Auferstehung (Start, Bewusstlosigkeit, Rettung im All) und Rückkehr mit dem Elixier (Watney gibt sein Wissen als Lehrer weiter) lassen sich zuordnen. Die zwölf Stationen ergeben eine bewährte Kapitelstruktur, wie sie auch klassische Adventures nutzen.
 
-/ #[*Passt nicht:*]: Watney verweigert den Ruf nicht – im Gegenteil („I'm not gonna die here“, 00:19:20). Es gibt keinen Mentor (allenfalls die NASA aus der Ferne) und keinen Antagonisten mit Gesicht. Vor allem fehlt die innere Wandlung, die das Modell trägt: Filmdienst bemängelt, dass „die Psychologie der Hauptfigur eher spärlich ausgearbeitet“ sei @filmdienst2015. Die Heldenreise liest den Film als Einzelgängergeschichte und verfehlt damit gerade die Kooperation, die das Thema ist. Der eigentliche Bogen von Schuld zu Wiedergutmachung gehört Lewis, nicht Watney.
+/ #[*Passt nicht:*]: Watney verweigert den Ruf nicht – im Gegenteil („I'm not gonna die here“, 00:19:20). Es gibt keinen Mentor (allenfalls die NASA aus der Ferne) und keinen Antagonisten mit Gesicht. Vor allem fehlt die innere Wandlung, die das Modell trägt: Filmdienst bemängelt, dass „die Psychologie der Hauptfigur eher spärlich ausgearbeitet“ sei @filmdienst2015. Die Heldenreise liest den Film als Einzelgängergeschichte. Moss-Wellington zufolge legt der Film diese Lesart zwar subtextuell selbst nahe – der NASA-Apparat werde „(with a few exceptions) presented as the obstacle to Mark’s profound genius“ und sei „always one step behind the story’s hero“ @mosswellington2020[S. 8]. Ein Analyseraster, das genau diese Tendenz zum Einzelgenie zur Grundannahme macht, kann sie aber nicht sichtbar machen, und es verfehlt die Kooperation auf der Textoberfläche. Der eigentliche Bogen von Schuld zu Wiedergutmachung gehört Lewis, nicht Watney.
 
 / #[*Anmerkung zur Kursvorlage:*]: Abweichend von #cite(<hebel2025>, form: "prose") liegt die Reise zum MAV in Schiaparelli nicht vor der Entscheidenden Prüfung (Station 7), sondern danach (ab 01:32). Auch im dortigen Spielentwurf steht die Hab-Katastrophe (Kapitel 6) nach der Rover-Langstrecke (Kapitel 5); im Film bricht die Schleuse bei 01:02:45, die Fahrt nach Schiaparelli beginnt erst nach der Rettungsentscheidung. Dass sich die Stationen nur durch solche Umstellungen füllen lassen, spricht gegen das Modell.
 
@@ -193,19 +193,16 @@ Kein klassisches Dramaturgiemodell, sondern eine Lesart: Der Film als Kette aus 
 / #[*Passt nicht:*]: Allein beschreibt sie keine Makrodramaturgie – Midpoint, Tiefpunkt und Finale haben darin kein anderes Gewicht als jedes andere Problem. Shettys Kritik ist zugleich eine Designregel: Im Spiel müssen Lösungen aus vorher etablierten Mitteln folgen, nicht aus Zufall.
 
 
-== Empfehlung
+== Entscheidung
 
-*Eine dreischichtige Kombination:* 
+Kein einzelnes Modell erfüllt alle fünf Kriterien: Save the Cat! ist am stärksten bei Struktur und Tempo, der Sequenzansatz bei Parallelsträngen und Rätsel-Gating, die Problemsequenz bei Stimmung und Mikrotakt. Die Analyse verwendet deshalb eine dreischichtige Struktur:
 
-+ *Makroebene – Save the Cat!:* benennt die _Funktion_ der großen Plot Points (Catalyst, Midpoint als falscher Sieg, All Is Lost, Break into Three) und liefert über feste Positionen das Tempo. Sie trifft die Plot Points in der richtigen Reihenfolge ohne Umdeutung, fängt mit der B-Story den Hermes-Strang auf und hat mit #cite(<brody2015>, form: "prose") eine externe Referenzanalyse.
-+ *Kapitelebene – Sequenzansatz nach Gulino:* acht Sequenzen von rund 10–25 Minuten, je eine zentrale Spannungsfrage. Sie werden zu den Spielkapiteln und bestimmen, wo zwischen den Strängen gewechselt wird. In den Kriterien Parallelstränge und Rätsel-Gating schneidet Gulino in der Tabelle am besten ab, ihm fehlt aber das Vokabular für die Makrofunktionen, das Save the Cat! liefert.
++ *Makroebene – Save the Cat!:* benennt die _Funktion_ der großen Plot Points (Catalyst, Midpoint als falscher Sieg, All Is Lost, Break into Three) und liefert über ihre Positionen das Tempo. Das Modell trifft die Plot Points in der richtigen Reihenfolge ohne Umdeutung, fängt mit der B-Story den Hermes-Strang auf und hat mit #cite(<brody2015>, form: "prose") eine externe Referenzanalyse.
++ *Kapitelebene – Sequenzansatz nach Gulino:* acht Sequenzen von rund 10–25 Minuten mit je einer zentralen Spannungsfrage. Sie werden zu den Kapiteln des Spiels und bestimmen, wo zwischen den Strängen gewechselt wird.
 + *Mikroebene – Problemsequenz:* der Takt Problem – Witz – Lösung als Einheit der Rätsel.
 
-Diese Kombination wird im Folgenden verwendet: Die Stationstabelle (@chap-stationen) ist nach den Beats von Save the Cat! gegliedert und nennt die Gulino-Sequenz; die Problemsequenzanalyse (@chap-problem) bildet die Mikroebene.
+Die Stationstabelle (@chap-stationen) ist nach den Beats von Save the Cat! gegliedert und nennt die zugehörige Gulino-Sequenz; @fig-kurve legt beide Ebenen über die Spannungskurve. Die Problemsequenzanalyse (@chap-problem) bildet die Mikroebene. Die Heldenreise nach Vogler wird trotz ihres Status als Kursstandard nicht verwendet, weil sie nur nach Umstellung der Plot-Reihenfolge passt und Mentor, Antagonist und innere Wandlung des Helden fehlen.
 
-Wer nur ein Modell will: Save the Cat!, weil es als einziges Modell Struktur _und_ Tempo ohne Umstellungen abbildet. Nicht empfohlen ist die Heldenreise nach Vogler: Sie ist im Kurs zwar Standard, passt aber nur nach Umstellung der Plot-Reihenfolge, hat keine Figur für Wandlung, Mentor und Antagonist und verfehlt den Kooperationsgedanken des Films.
-
-#pagebreak()
 = Stationen <chap-stationen>
 
 == Sequenzen nach Gulino
@@ -252,7 +249,7 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
 
     [*Break into Two* \ 00:21:23–00:21:29 \ S2], [„I'm a botanist … Mars will come to fear my botany powers.“], [Der Held entscheidet sich aktiv – vom Opfer zum Problemlöser. Ton kippt in Komik. Spannung 3.], [#st("s03-botanik", "00:21:20–00:21:30", "Watney an der Logkamera, entschlossen-grinsend")],
 
-    [*B Story* \ 00:56–00:59 \ (Hermes)], [Crew erfährt, dass Watney lebt; Lewis: „I left him behind“ (00:59:21). Bogen von Schuld zu Wiedergutmachung @brody2015.], [Zweiter Strang mit innerer Entwicklung, die dem Haupthelden fehlt. Liefert die emotionale Fallhöhe.], [#st("s06-hermes", "00:58:14–00:59:31", "Hermes-Crew vor dem Bildschirm, Nahaufnahme Lewis")],
+    [*B Story* \ 00:56–00:59 \ (Hermes)], [Crew erfährt, dass Watney lebt; Lewis: „I left him behind“ (00:59:21). Keine Trauer, sondern Enttäuschung über sich selbst und die eigene Entscheidung. Bogen von Schuld zu Wiedergutmachung @brody2015.], [Zweiter Strang mit innerer Entwicklung, die dem Haupthelden fehlt. Liefert die emotionale Fallhöhe.], [#st("s06-hermes", "00:58:14–00:59:31", "Hermes-Crew vor dem Bildschirm, Nahaufnahme Lewis")],
 
     [*Fun and Games* \ 00:21–00:47 \ S2–S3], [Kartoffelfarm aus Fäkalien und Marserde, Wasser aus Hydrazin (Explosion, „So, yeah, I blew myself up“), Disco, RTG, Fahrt zu Pathfinder. Parallel: NASA entdeckt ihn.], [„Promise of the premise“: Eine Folge kleiner, lösbarer Probleme mit sofortiger Pointe. Fehlschläge sind komisch, nicht tödlich.], [#st("p05-hydrazin", "00:25:11–00:26:36", "Plastikzelt / Explosionsblitz / rußgeschwärztes Gesicht")],
 
@@ -276,46 +273,83 @@ Beat-Namen nach #cite(<snyder2005>, form: "prose"), Zuordnung in Anlehnung an un
 == Tempo und Stimmung
 
 #let kurve = (
-  (2, 3, ""), (5.6, 8, ""), (9.5, 5, ""), (13, 8, ""), (16.5, 4, ""), (21.5, 3, ""),
-  (26.4, 7, ""), (26.6, 3, ""), (29, 4, ""), (32.5, 4, ""), (38, 5, ""), (44, 4, ""),
-  (49, 3, ""), (55, 3, ""), (59, 5, ""), (63, 9, ""), (67, 7, ""), (68, 4, ""),
-  (72.5, 5, ""), (78, 9, ""), (79.5, 8, ""), (81.8, 5, ""), (84, 5, ""), (86.4, 7, ""),
-  (90.5, 4, ""), (95, 3, ""), (99, 3, ""), (106.5, 5, ""), (108, 4, ""), (116, 8, ""),
-  (118, 9, ""), (122, 8, ""), (126.3, 9, ""), (129.2, 10, ""), (130, 3, ""), (133, 2, ""), (135, 2, ""),
+  (2, 3), (5.6, 8), (9.5, 5), (13, 8), (16.5, 4), (21.5, 3),
+  (26.4, 7), (26.6, 3), (29, 4), (32.5, 4), (38, 5), (44, 4),
+  (49, 3), (55, 3), (59, 5), (63, 9), (67, 7), (68, 4),
+  (72.5, 5), (78, 9), (79.5, 8), (81.8, 5), (84, 5), (86.4, 7),
+  (90.5, 4), (95, 3), (99, 3), (106.5, 5), (108, 4), (116, 8),
+  (118, 9), (122, 8), (126.3, 9), (129.2, 10), (130, 3), (133, 2), (135, 2),
 )
-#let beats = (
-  (5.6, "Catalyst"), (21.5, "Break into 2"), (49, "Midpoint"), (63, "Bad Guys"),
-  (78, "All Is Lost"), (90.5, "Break into 3 → Finale"), (133, "Final Image"),
+// Save the Cat!: punktuelle Beats (Minute, Nr., Name) und Phasen (von, bis, Beschriftung)
+#let stc-punkte = (
+  (2.1, 1, "Opening Image"), (5.7, 4, "Catalyst"), (17, 2, "Theme Stated"),
+  (21.5, 6, "Break into Two"), (49.3, 9, "Midpoint"), (57, 7, "B Story"),
+  (77.8, 11, "All Is Lost"), (132.2, 15, "Final Image"),
 )
-#let seqgrenzen = (15.3, 31.3, 52.5, 62.7, 80.3, 91.3, 110.3)
+#let stc-phasen = (
+  (2.1, 5.6, "3"), (10.3, 21.4, "5 Debate"), (21.5, 47.2, "8 Fun and Games"),
+  (62.7, 77.7, "10 Bad Guys"), (78.8, 80.3, "12"),
+  (80.3, 91.3, "13"), (92.2, 131, "14 Finale"),
+)
+#let sequenzen = (
+  (0, 15.3, "S1"), (15.3, 31.3, "S2"), (31.3, 52.5, "S3"), (52.5, 62.7, "S4"),
+  (62.7, 80.3, "S5"), (80.3, 91.3, "S6"), (91.3, 110, "S7"), (110, 135.3, "S8"),
+)
 
+#let rot = rgb("#c0392b")
 #figure(
   {
+    let L = 1.2cm // Spalte für Zeilenbeschriftungen
     let W = 15cm
     let H = 5cm
-    let px(m) = m / 141 * W
-    let py(t) = H - t / 10 * H
-    box(width: W, height: H + 1.2cm, inset: (top: 1.0cm), {
-      place(rect(width: W, height: H, stroke: 0.5pt + luma(150)))
-      for g in seqgrenzen {
-        place(dx: px(g), line(length: H, angle: 90deg, stroke: (paint: luma(200), dash: "dotted")))
+    let top = 1.8cm // Platz für Beat-Beschriftungen
+    let px(m) = L + m / 141 * W
+    let py(t) = top + H - t / 10 * H
+    let y-stc = top + H + 0.5cm
+    let y-seq = y-stc + 0.7cm
+    let band(a, b, y, h, fill, body) = place(dx: px(a), dy: y, rect(
+      width: px(b) - px(a), height: h, fill: fill, stroke: 0.5pt + white, inset: 1pt,
+      align(center + horizon, text(size: 5.5pt, body)),
+    ))
+    box(width: L + W, height: y-seq + 0.7cm, {
+      place(dx: L, dy: top, rect(width: W, height: H, stroke: 0.5pt + luma(150)))
+      // Sequenzgrenzen
+      for (a, b, n) in sequenzen.slice(1) {
+        place(dx: px(a), dy: top, line(length: H, angle: 90deg, stroke: (paint: luma(190), dash: "dotted")))
       }
-      for (m, name) in beats {
-        place(dx: px(m), line(length: H, angle: 90deg, stroke: (paint: rgb("#c0392b"), dash: "dashed", thickness: 0.6pt)))
-        place(dx: px(m) - 0.1cm, dy: -0.25cm, rotate(-35deg, origin: bottom + left, text(size: 6.5pt, fill: rgb("#c0392b"), name)))
+      // punktuelle Beats
+      for (m, nr, name) in stc-punkte {
+        place(dx: px(m), dy: top, line(length: H, angle: 90deg, stroke: (paint: rot, dash: "dashed", thickness: 0.6pt)))
+        place(dx: px(m) - 0.05cm, dy: top - 0.3cm, rotate(-50deg, origin: bottom + left, text(size: 6pt, fill: rot)[#nr #name]))
       }
+      // Kurve
       let pts = kurve.map(p => (px(p.at(0)), py(p.at(1))))
-      place(curve(
-        stroke: 1.2pt + rgb("#1f5f8b"),
-        curve.move(pts.first()),
-        ..pts.slice(1).map(p => curve.line(p)),
-      ))
+      place(curve(stroke: 1.2pt + rgb("#1f5f8b"), curve.move(pts.first()), ..pts.slice(1).map(p => curve.line(p))))
+      // Achsen
+      for t in (0, 5, 10) {
+        place(dx: L - 0.35cm, dy: py(t) - 0.12cm, text(size: 6pt)[#t])
+      }
       for m in (0, 20, 40, 60, 80, 100, 120, 140) {
-        place(dx: px(m) - 0.2cm, dy: H + 0.1cm, text(size: 6.5pt)[#m'])
+        place(dx: px(m) - 0.2cm, dy: top + H + 0.08cm, text(size: 6pt)[#m'])
+      }
+      // Bänder
+      place(dy: y-stc + 0.12cm, text(size: 6pt, fill: rot)[*Save the Cat!*])
+      for (a, b, label) in stc-phasen {
+        band(a, b, y-stc, 0.6cm, rgb("#f3d3cd"), label)
+      }
+      place(dy: y-seq + 0.12cm, text(size: 6pt)[*Gulino*])
+      for (i, (a, b, n)) in sequenzen.enumerate() {
+        band(a, b, y-seq, 0.5cm, if calc.even(i) { luma(205) } else { luma(230) }, n)
       }
     })
   },
-  caption: [Spannungskurve der Kinofassung (eigene Einschätzung, 1–10; x-Achse in Minuten). Rot: Save-the-Cat-Beats, grau gepunktet: Sequenzgrenzen S1–S8.],
+  caption: [
+  #set align(left)
+  Spannungskurve der Kinofassung (eigene Einschätzung, 0–10; x-Achse in Minuten) mit allen 15 Save-the-Cat-Beats und den acht Sequenzen nach Gulino.\
+   / #box(stroke: (paint: rgb("#f3d3cd"), dash: "dashed"))[Rot gestrichelt:]: punktuelle Beats\
+   / #box(fill: rgb("#f3d3cd"))[rote Felder:]: Beats, die eine Phase umfassen.\
+   / #box(fill: gray)[Grau gepunktet:]: Sequenzgrenzen.\
+   / #[Beats:]: 1 Opening Image · 2 Theme Stated · 3 Set-Up · 4 Catalyst · 5 Debate · 6 Break into Two · 7 B Story · 8 Fun and Games · 9 Midpoint · 10 Bad Guys Close In · 11 All Is Lost · 12 Dark Night of the Soul · 13 Break into Three · 14 Finale · 15 Final Image.],
 ) <fig-kurve>
 
 Aus Kurve und Untertitelzeiten ergeben sich vier Tempo-Merkmale, die das Spiel übernehmen sollte:
